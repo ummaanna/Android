@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08AD7F"
+    android:paddingTop="150dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"
+        android:background="#fff"
+        android:layout_margin="8dp"
+        android:hint="Email:"/>
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_below="@id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:background="#fff"
+        android:layout_margin="8dp"
+        android:layout_marginTop="35dp"
+        android:hint="Senha:" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSenha"
+        android:layout_marginTop="25dp"
+        android:textColor="#0AA37D"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        android:text="LOGIN"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Ainda não é cadastrado? cadastre-se!"/>
+</RelativeLayout>
